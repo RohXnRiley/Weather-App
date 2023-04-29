@@ -47,21 +47,24 @@
       </div>
 
       <div class="logo-container">
-        ICON : <img src= <%= icon %> alt="">
+        <!-- Write a condition for if icon is passed then its rendered else not -->
+        <h1>
+          CITY : <%= city.toUpperCase() %>
+        </h1>
       </div>
       
       <div class="container container-dark inner-2 mt-5">
         <div class="left container">
           <h1>
-            TEMPERATURE : <%= temperature %>
+            TEMPERATURE : <%= temperature %> &deg;C
           </h1>
           <br>
           <h1>
-            PRESSURE : <%= pres %>
+            PRESSURE : <%= pres %> hP
           </h1>
           <br>
           <h1>
-            HUMIDITY : <%= hum %>
+            HUMIDITY : <%= hum %> %
           </h1>
         </div>
 
@@ -71,11 +74,11 @@
           </h1> 
           <br>
           <h1>
-            WIND-SPEED : <%= windspeed %>
+            WIND-SPEED : <%= windspeed %> Km/h
           </h1>
           <br>
           <h1>
-            WIND-DIRECTION : <%= degree %>
+            WIND-DIRECTION : <%= degree %> &deg;
           </h1>
         </div>
       </div>

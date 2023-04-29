@@ -9,6 +9,7 @@ app.use(express.static('public'));
 
 app.get('/',(req,res)=>{
     res.render('index',{
+        city : 'Enter City',
         description : '',
         temperature : '',
         windspeed : '',
@@ -44,6 +45,7 @@ app.post('/',(req,res)=>{
             console.log(desc,temp,speed,deg,humidity,pressure);
 
             res.render('index',{
+                city  : query,
                 description : desc,
                 temperature : temp,
                 windspeed : speed,
